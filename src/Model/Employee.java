@@ -7,18 +7,20 @@ public abstract class Employee {
 	protected String email;
 	protected String phoneNumber;
 	protected String address;
+	protected String password;
 	protected double salary;
 	protected Option[] options;
 	public Employee() {
 		
 	}
-	public Employee(int ID,String firstName,String lastName,String email,String phoneNumber,String address,double salary) {
+	public Employee(int ID,String firstName,String lastName,String email,String phoneNumber,String address,String password, double salary) {
 		this.ID=ID;
 		this.firstName=firstName;
 		this.lastName=lastName;
 		this.email=email;
 		this.phoneNumber=phoneNumber;
 		this.address=address;
+		this.password=password;
 		this.salary=salary;
 	}
 	public int getID() {
@@ -57,10 +59,20 @@ public abstract class Employee {
 	public void setAddress(String address) {
 		this.address=address;
 	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	public double getSalary() {
 		return salary;
 	}
 	public void setSalary(double salary) {
 		this.salary=salary;
 	}
+	public abstract int getDepartment();
+	// 0=> Admin
+	// 1=> Cashier
+	// 2=> StoreKeeper
 }

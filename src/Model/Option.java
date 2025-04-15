@@ -1,5 +1,5 @@
 package Model;
 
-public class Option {
+public interface Option {
 
 }
