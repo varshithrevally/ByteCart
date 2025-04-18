@@ -41,5 +41,10 @@ public class Section {
 	public void setName(String name) {
 		this.name=name;
 	}
-	
+	public void print() {
+		System.out.println("------------------------");
+		System.out.println("ID:\t\t"+getID());
+		System.out.println("Name:\t\t"+getName());
+		System.out.println("Description:\t"+getDescription());
+	}
 }
