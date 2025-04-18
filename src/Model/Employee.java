@@ -1,5 +1,7 @@
 package Model;
 
+import java.util.Scanner;
+
 public abstract class Employee {
 	protected int ID;
 	protected String firstName;
@@ -75,5 +77,5 @@ public abstract class Employee {
 	// 0=> Admin
 	// 1=> Cashier
 	// 2=> StoreKeeper
-	public abstract void showList();
+	public abstract void showList(Scanner s,Database database);
 }

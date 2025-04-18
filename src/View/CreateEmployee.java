@@ -47,12 +47,18 @@ public class CreateEmployee implements Option{
 		}
 		e.setFirstName(firstName);
 		e.setLastName(lastName);
+		e.setEmail(email);
 		e.setPhoneNumber(phoneNumber);
 		e.setAddress(address);
 		e.setPassword(password);
 		e.setSalary(salary);
 		
 		new Controller.CreateEmployee(e, database);
+	}
+
+	@Override
+	public String getOption() {
+		return "Add new Employee";
 	}
 
 }

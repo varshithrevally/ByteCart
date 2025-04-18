@@ -18,12 +18,16 @@ public class Login implements Option{
 		Controller.Login login=new Controller.Login(email, password, database);
 		if(login.isLoggedIn()) {
 			Employee employee=login.getUser();
-			System.out.println("Welcome"+employee.getFirstName());
-			employee.showList();
+			System.out.println("Welcome "+employee.getFirstName());
+			employee.showList(s,database);
 		}else {
 			System.out.println("Wrong email or pasword");
 			System.out.println("Try again Later");
 		}
+	}
+	@Override
+	public String getOption() {
+		return "Login";
 	}
 
 }

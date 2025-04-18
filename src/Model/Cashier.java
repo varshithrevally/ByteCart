@@ -1,5 +1,7 @@
 package Model;
 
+import java.util.Scanner;
+
 public class Cashier extends Employee {
     public Cashier() {
     	this.options=new Option[] {};
@@ -20,7 +22,7 @@ public class Cashier extends Employee {
 		return 1;
 	}
 	@Override
-	public void showList() {
+	public void showList(Scanner s,Database database) {
 		System.out.println("Cashier List");
 	}
 }
