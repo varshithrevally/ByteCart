@@ -19,4 +19,8 @@ public class Storekeeper extends Employee{
 	public int getDepartment() {
 		return 2;
 	}
+	@Override
+	public void showList() {
+		System.out.println("Store Keeper List");
+	}
 }

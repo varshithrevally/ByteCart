@@ -19,4 +19,8 @@ public class Cashier extends Employee {
 	public int getDepartment() {
 		return 1;
 	}
+	@Override
+	public void showList() {
+		System.out.println("Cashier List");
+	}
 }

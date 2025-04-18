@@ -75,4 +75,5 @@ public abstract class Employee {
 	// 0=> Admin
 	// 1=> Cashier
 	// 2=> StoreKeeper
+	public abstract void showList();
 }

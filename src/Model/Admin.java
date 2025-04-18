@@ -19,4 +19,8 @@ public class Admin extends Employee{
 	public int getDepartment() {
 		return 0;
 	}
+	@Override
+	public void showList() {
+		System.out.println("Admin List");
+	}
 }
