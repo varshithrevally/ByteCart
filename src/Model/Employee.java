@@ -77,5 +77,13 @@ public abstract class Employee {
 	// 0=> Admin
 	// 1=> Cashier
 	// 2=> StoreKeeper
-	public abstract void showList(Scanner s,Database database);
+	public void showList(Scanner s,Database database) {
+		System.out.println("-------------------------");
+		for(int i=1;i<=options.length;i++) {
+			System.out.println(i+". "+options[i-1].getOption());
+		}
+		System.out.println("-------------------------");
+		int selected=s.nextInt();
+		options[selected-1].oper(this, s, database);
+	}
 }

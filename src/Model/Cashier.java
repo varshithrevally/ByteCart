@@ -1,11 +1,12 @@
 package Model;
 
-import java.util.Scanner;
+
+import View.ChangePassword;
 
 public class Cashier extends Employee {
     public Cashier() {
-    	this.options=new Option[] {};
-	}
+    	generateList();
+    }
 	public Cashier(int ID,String firstName,String lastName,String email,String phoneNumber,String address,String password,double salary) {
 		this.ID=ID;
 		this.firstName=firstName;
@@ -15,14 +16,16 @@ public class Cashier extends Employee {
 		this.address=address;
 		this.password = password;
 		this.salary=salary;
-		this.options=new Option[] {};
+		generateList();
+	}
+	private void generateList() {
+		this.options=new Option[] {
+				new ChangePassword()
+			};
 	}
 	@Override
 	public int getDepartment() {
 		return 1;
 	}
-	@Override
-	public void showList(Scanner s,Database database) {
-		System.out.println("Cashier List");
-	}
+	
 }
