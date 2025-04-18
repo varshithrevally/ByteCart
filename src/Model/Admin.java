@@ -3,6 +3,9 @@ package Model;
 
 import View.ChangePassword;
 import View.CreateEmployee;
+import View.CreateSection;
+import View.DeleteEmployee;
+import View.ReadAllEmployees;
 import View.UpdateEmployee;
 
 public class Admin extends Employee{
@@ -24,7 +27,10 @@ public class Admin extends Employee{
 	private void generateList() {
 		this.options=new Option[] {
 				new CreateEmployee(),
+				new ReadAllEmployees(),
 				new UpdateEmployee(),
+				new DeleteEmployee(),
+				new CreateSection(),
 				new ChangePassword()
 			};
 	}

@@ -62,6 +62,5 @@ public class ReadAllEmployees {
 		for(Employee e:employees) {
 			e.print();
 		}
-		System.out.println("------------------------");
 	}
 }

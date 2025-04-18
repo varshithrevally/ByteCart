@@ -1,6 +1,7 @@
 package Model;
 
 import View.ChangePassword;
+import View.CreateSection;
 
 public class Storekeeper extends Employee{
     public Storekeeper() {
@@ -19,6 +20,7 @@ public class Storekeeper extends Employee{
 	}
 	private void generateList() {
 		this.options=new Option[] {
+				new CreateSection(),
 				new ChangePassword()
 			};
 	}
