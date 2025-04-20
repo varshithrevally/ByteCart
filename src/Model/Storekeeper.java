@@ -3,6 +3,7 @@ package Model;
 import View.ChangePassword;
 import View.CreateSection;
 import View.ReadAllSections;
+import View.UpdateSection;
 
 public class Storekeeper extends Employee{
     public Storekeeper() {
@@ -23,6 +24,7 @@ public class Storekeeper extends Employee{
 		this.options=new Option[] {
 				new CreateSection(),
 				new ReadAllSections(),
+				new UpdateSection(),
 				new ChangePassword()
 			};
 	}

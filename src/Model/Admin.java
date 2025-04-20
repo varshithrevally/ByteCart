@@ -8,6 +8,7 @@ import View.DeleteEmployee;
 import View.ReadAllEmployees;
 import View.ReadAllSections;
 import View.UpdateEmployee;
+import View.UpdateSection;
 
 public class Admin extends Employee{
     public Admin() {
@@ -33,6 +34,7 @@ public class Admin extends Employee{
 				new DeleteEmployee(),
 				new CreateSection(),
 				new ReadAllSections(),
+				new UpdateSection(),
 				new ChangePassword()
 			};
 	}
