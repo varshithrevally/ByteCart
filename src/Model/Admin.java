@@ -12,6 +12,7 @@ import View.ReadAllProducts;
 import View.ReadAllSections;
 import View.ReadSectionProducts;
 import View.UpdateEmployee;
+import View.UpdateProduct;
 import View.UpdateSection;
 
 public class Admin extends Employee{
@@ -43,6 +44,7 @@ public class Admin extends Employee{
 				new CreateProduct(),
 				new ReadAllProducts(),
 				new ReadSectionProducts(),
+				new UpdateProduct(),
 				new ChangePassword()
 			};
 	}
