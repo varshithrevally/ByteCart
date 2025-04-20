@@ -5,6 +5,7 @@ import View.ChangePassword;
 import View.CreateEmployee;
 import View.CreateSection;
 import View.DeleteEmployee;
+import View.DeleteSection;
 import View.ReadAllEmployees;
 import View.ReadAllSections;
 import View.UpdateEmployee;
@@ -35,6 +36,7 @@ public class Admin extends Employee{
 				new CreateSection(),
 				new ReadAllSections(),
 				new UpdateSection(),
+				new DeleteSection(),
 				new ChangePassword()
 			};
 	}
