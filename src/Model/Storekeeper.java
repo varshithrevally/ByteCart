@@ -3,6 +3,7 @@ package Model;
 import View.ChangePassword;
 import View.CreateProduct;
 import View.CreateSection;
+import View.DeleteProduct;
 import View.DeleteSection;
 import View.ReadAllProducts;
 import View.ReadAllSections;
@@ -35,6 +36,7 @@ public class Storekeeper extends Employee{
 				new ReadAllProducts(),
 				new ReadSectionProducts(),
 				new UpdateProduct(),
+				new DeleteProduct(),
 				new ChangePassword()
 			};
 	}

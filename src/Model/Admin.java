@@ -4,8 +4,10 @@ package Model;
 import View.ChangePassword;
 import View.CreateEmployee;
 import View.CreateProduct;
+import View.CreateReceipt;
 import View.CreateSection;
 import View.DeleteEmployee;
+import View.DeleteProduct;
 import View.DeleteSection;
 import View.ReadAllEmployees;
 import View.ReadAllProducts;
@@ -45,6 +47,8 @@ public class Admin extends Employee{
 				new ReadAllProducts(),
 				new ReadSectionProducts(),
 				new UpdateProduct(),
+				new DeleteProduct(),
+				new CreateReceipt(),
 				new ChangePassword()
 			};
 	}

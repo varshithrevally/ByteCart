@@ -2,6 +2,7 @@ package Model;
 
 
 import View.ChangePassword;
+import View.CreateReceipt;
 
 public class Cashier extends Employee {
     public Cashier() {
@@ -20,6 +21,7 @@ public class Cashier extends Employee {
 	}
 	private void generateList() {
 		this.options=new Option[] {
+				new CreateReceipt(),
 				new ChangePassword()
 			};
 	}

@@ -35,5 +35,8 @@ public class ReadSectionProducts {
 		System.out.println("------------------------");
 		
 	}
+	public ArrayList<Product> getProducts(){
+		return products;
+	}
 
 }

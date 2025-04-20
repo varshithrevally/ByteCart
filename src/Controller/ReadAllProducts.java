@@ -38,4 +38,11 @@ public class ReadAllProducts {
 		System.out.println("------------------------");
 		
 	}
+	public ArrayList<Integer> getIDs(){
+		ArrayList<Integer> IDs=new ArrayList<Integer>();
+		for(Product p:products) {
+			IDs.add(p.getID());
+		}
+		return IDs;
+	}
 }
