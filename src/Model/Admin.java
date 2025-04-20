@@ -8,7 +8,9 @@ import View.CreateSection;
 import View.DeleteEmployee;
 import View.DeleteSection;
 import View.ReadAllEmployees;
+import View.ReadAllProducts;
 import View.ReadAllSections;
+import View.ReadSectionProducts;
 import View.UpdateEmployee;
 import View.UpdateSection;
 
@@ -39,6 +41,8 @@ public class Admin extends Employee{
 				new UpdateSection(),
 				new DeleteSection(),
 				new CreateProduct(),
+				new ReadAllProducts(),
+				new ReadSectionProducts(),
 				new ChangePassword()
 			};
 	}

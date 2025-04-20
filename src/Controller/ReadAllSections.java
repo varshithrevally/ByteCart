@@ -38,4 +38,7 @@ public class ReadAllSections {
 		}
 		return ids;
 	}
+	public ArrayList<Section> getList(){
+		return sections;
+	}
 }

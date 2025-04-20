@@ -4,7 +4,9 @@ import View.ChangePassword;
 import View.CreateProduct;
 import View.CreateSection;
 import View.DeleteSection;
+import View.ReadAllProducts;
 import View.ReadAllSections;
+import View.ReadSectionProducts;
 import View.UpdateSection;
 
 public class Storekeeper extends Employee{
@@ -29,6 +31,8 @@ public class Storekeeper extends Employee{
 				new UpdateSection(),
 				new DeleteSection(),
 				new CreateProduct(),
+				new ReadAllProducts(),
+				new ReadSectionProducts(),
 				new ChangePassword()
 			};
 	}
