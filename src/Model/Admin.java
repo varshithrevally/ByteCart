@@ -3,6 +3,7 @@ package Model;
 
 import View.ChangePassword;
 import View.CreateEmployee;
+import View.CreateProduct;
 import View.CreateSection;
 import View.DeleteEmployee;
 import View.DeleteSection;
@@ -37,6 +38,7 @@ public class Admin extends Employee{
 				new ReadAllSections(),
 				new UpdateSection(),
 				new DeleteSection(),
+				new CreateProduct(),
 				new ChangePassword()
 			};
 	}

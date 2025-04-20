@@ -29,6 +29,13 @@ public class ReadAllSections {
 		for(Section s:sections) {
 			s.print();
 		}
-		System.out.println("------------------------");
+		System.out.println("---------------- 	--------");
+	}
+	public ArrayList<Integer> getIDs(){
+		ArrayList<Integer> ids=new ArrayList<Integer>();
+		for(Section s:sections) {
+			ids.add(s.getID());
+		}
+		return ids;
 	}
 }
