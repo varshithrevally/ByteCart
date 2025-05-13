@@ -105,6 +105,9 @@ public abstract class Employee {
 		options[selected-1].oper(this, s, database);
 		showList(s,database);
 	}
+	public String getName() {
+		return getFirstName()+" "+getLastName();
+	}
 	public void print() {
 		System.out.println("------------------------");
 		System.out.println("ID:\t\t"+getID());

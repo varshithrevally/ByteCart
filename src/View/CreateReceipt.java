@@ -61,15 +61,22 @@ public class CreateReceipt implements Option{
 			System.out.println("Select Payment Type:\n1. Cash\n2. Visa");
 			payment=s.nextInt();
 		}
-		System.out.println("Enter paid: ");
-		double paid=s.nextDouble();
-		if(paid<total) {
-			System.out.println("Invalid data");
+		double paid,change;
+		if(payment==1) {
 			System.out.println("Enter paid: ");
-			paid=s.nextDouble();
+		    paid=s.nextDouble();
+			while(paid<total) {
+				System.out.println("Invalid data");
+				System.out.println("Enter paid: ");
+				paid=s.nextDouble();
+			}
+			change=paid-total;
+			System.out.println("Change= "+change+" $");
+		}else {
+			paid=0;
+			change=0;
 		}
-		double change=paid-total;
-		System.out.println("Change= "+change+" $");
+		
 		Receipt receipt=new Receipt();
 		receipt.setCashier(user);
 		receipt.setProducts(products);

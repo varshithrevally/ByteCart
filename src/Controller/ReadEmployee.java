@@ -15,7 +15,7 @@ public class ReadEmployee {
 		String select="SELECT * FROM `employees` WHERE `ID`='"+ID+"';";
 		try {
 			ResultSet rs=database.getStatement().executeQuery(select);
-			rs.next();
+			if(rs.next()) {
 			String firstName=rs.getString("FirstName");
 			String lastName=rs.getString("LastName");
 			String phoneNumber=rs.getString("PhoneNumber");
@@ -48,6 +48,7 @@ public class ReadEmployee {
 			e.setSalary(salary);
 			e.setEmail(email);
 			e.setPassword(password);
+			}
 		}catch(SQLException exception) {
 			exception.printStackTrace();
 		}

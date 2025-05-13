@@ -64,4 +64,11 @@ public class Receipt {
 	public void setChange(double change) {
 		this.change=change;
 	}
+	public String getPaymentToString() {
+		if(payment==1) {
+			return "Cash";
+		}else {
+			return "Visa";
+		}
+	}
 }

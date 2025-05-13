@@ -2,7 +2,7 @@ package Controller;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
+
 
 import Model.Database;
 import Model.Product;
@@ -10,7 +10,6 @@ import Model.Receipt;
 
 public class CreateReceipt {
 	public CreateReceipt(Receipt r,Database database) {
-		ArrayList<String> insertProducts=new ArrayList<String>();
 		int ID=-1;
 		String insertReceipt="INSERT INTO `receipts`( `Cashier`, `Total`, `Payment`, `Paid`, `Changee`) VALUES "
 				+ "('"+r.getCashier().getID()+"','"+r.getTotal()+"','"+r.getPayment()+"','"+r.getPaid()+"','"+r.getChange()+"');";
