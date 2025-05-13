@@ -8,6 +8,7 @@ import View.CreateReceipt;
 import View.CreateSection;
 import View.DeleteEmployee;
 import View.DeleteProduct;
+import View.DeleteReceipt;
 import View.DeleteSection;
 import View.ReadAllEmployees;
 import View.ReadAllProducts;
@@ -15,6 +16,7 @@ import View.ReadAllReceipts;
 import View.ReadAllSections;
 import View.ReadCashierReceipts;
 import View.ReadMyReceipts;
+import View.ReadReceipt;
 import View.ReadSectionProducts;
 import View.UpdateEmployee;
 import View.UpdateProduct;
@@ -55,6 +57,8 @@ public class Admin extends Employee{
 				new ReadAllReceipts(),
 				new ReadMyReceipts(),
 				new ReadCashierReceipts(),
+				new ReadReceipt(),
+				new DeleteReceipt(),
 				new ChangePassword()
 			};
 	}

@@ -3,9 +3,11 @@ package Model;
 
 import View.ChangePassword;
 import View.CreateReceipt;
+import View.DeleteReceipt;
 import View.ReadAllReceipts;
 import View.ReadCashierReceipts;
 import View.ReadMyReceipts;
+import View.ReadReceipt;
 
 public class Cashier extends Employee {
     public Cashier() {
@@ -28,6 +30,8 @@ public class Cashier extends Employee {
 				new ReadAllReceipts(),
 				new ReadMyReceipts(),
 				new ReadCashierReceipts(),
+				new ReadReceipt(),
+				new DeleteReceipt(),
 				new ChangePassword()
 			};
 	}

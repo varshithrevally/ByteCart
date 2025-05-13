@@ -40,6 +40,20 @@ public class ReadAllReceipts {
 	public ArrayList<Receipt> getReceipts() {
 		return receipts;
 	}
-	
+	public void print() {
+		System.out.println("-----------------------------------------------");
+		System.out.println("ID\tCashier\t\tTotal\tPayment\tPaid\tChange");
+		for(Receipt r: receipts) {
+			 if (r.getCashier() != null) {
+			System.out.print(r.getID()+"\t"+r.getCashier().getName()+"\t");
+			if(r.getCashier().getName().length()<8) {
+				System.out.print("\t");
+			}
+			System.out.println(r.getTotal()+"$\t"+r.getPaymentToString()
+		    +"\t"+r.getPaid()+"$\t"+r.getChange()+"$");
+			 }
+		}
+		System.out.println("-----------------------------------------------");
+	}
 
 }
