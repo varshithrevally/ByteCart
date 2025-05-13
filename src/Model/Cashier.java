@@ -4,6 +4,8 @@ package Model;
 import View.ChangePassword;
 import View.CreateReceipt;
 import View.ReadAllReceipts;
+import View.ReadCashierReceipts;
+import View.ReadMyReceipts;
 
 public class Cashier extends Employee {
     public Cashier() {
@@ -24,6 +26,8 @@ public class Cashier extends Employee {
 		this.options=new Option[] {
 				new CreateReceipt(),
 				new ReadAllReceipts(),
+				new ReadMyReceipts(),
+				new ReadCashierReceipts(),
 				new ChangePassword()
 			};
 	}
