@@ -9,6 +9,7 @@ import Model.Database;
 import Model.Employee;
 import Model.Option;
 import Model.Product;
+import Model.Receipt;
 
 public class CreateReceipt implements Option{
 
@@ -69,7 +70,15 @@ public class CreateReceipt implements Option{
 		}
 		double change=paid-total;
 		System.out.println("Change= "+change+" $");
+		Receipt receipt=new Receipt();
+		receipt.setCashier(user);
+		receipt.setProducts(products);
+		receipt.setTotal(total);
+		receipt.setPayment(payment);
+		receipt.setPaid(paid);
+		receipt.setChange(change);
 		
+		new Controller.CreateReceipt(receipt, database);
 	}
 
 	@Override

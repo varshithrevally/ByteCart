@@ -7,13 +7,13 @@ public class Receipt {
 	private Employee cashier;
 	private ArrayList<Product> products;
 	private double total;
-	private String payment;
+	private int payment;
 	private double paid;
 	private double change;
 	public Receipt() {
 		
 	}
-	public Receipt(int ID, Employee cashier, ArrayList<Product> products, double total, String payment,double paid,double change) {
+	public Receipt(int ID, Employee cashier, ArrayList<Product> products, double total, int payment,double paid,double change) {
 		this.ID=ID;
 		this.cashier=cashier;
 		this.products=products;
@@ -40,16 +40,16 @@ public class Receipt {
 	public void setProducts(ArrayList<Product> products) {
 		this.products=products;
 	}
-	public double getToatal() {
+	public double getTotal() {
 		return total;
 	}
 	public void setTotal(double total) {
 		this.total=total;
 	}
-	public String getPayment() {
+	public int getPayment() {
 		return payment;
 	}
-	public void setPayment(String payment) {
+	public void setPayment(int payment) {
 		this.payment=payment;
 	}
 	public double getPaid() {
