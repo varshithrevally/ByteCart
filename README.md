@@ -1,4 +1,4 @@
-```
+
 # 🛒 SuperMarket Store
 
 A modular Java application for managing retail operations like inventory, billing, and receipt generation. Integrated with SQL via JDBC, it features robust CRUD functionality and follows an MVC architecture for clean separation of concerns.
