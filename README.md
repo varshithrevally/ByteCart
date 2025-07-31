@@ -1,7 +1,7 @@
 
 # 🛒 ByteCart
 
-ByteCart is a modular Java application designed to streamline retail operations, offering robust inventory management, real-time billing, and receipt generation. Built with SQL integration via JDBC and structured around the MVC architecture, it enables clean separation of concerns and scalable CRUD functionality for enterprise-grade retail systems.
+ByteCart is a modular Java-based application designed to streamline retail operations for supermarkets. Built with robust SQL integration via JDBC and powered by XAMPP and Apache, it manages inventory, billing, and receipt generation with precision.
 
 ---
 
